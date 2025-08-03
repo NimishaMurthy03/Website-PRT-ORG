@@ -1,0 +1,9 @@
+pipeline {
+    agent { label 'slave2' }
+    stages {
+        stage('Clean') {
+            steps {
+                cleanWs()
+            }
+        }
+       
